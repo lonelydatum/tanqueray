@@ -1,4 +1,4 @@
-import start from '../../_common/js/london_gin.js'
+import start from '../../_common/js/malacca.js'
 
-start(180, 1.5)
+start(120)
 

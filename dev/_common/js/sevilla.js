@@ -1,4 +1,4 @@
-const start = (x, time)=>{
+const start = ()=>{
 	TweenLite.defaultEase = Power4.easeOut
 	const tl = new TimelineMax()
 	tl.set('.frame1', {opacity:1})
@@ -7,7 +7,9 @@ const start = (x, time)=>{
 	tl.from('.leaf.top', .9, {y:"-=100"}, 'leaf')
 	tl.from('.leaf.bottom', 1.2, {y:"+=100"}, 'leaf+=.2')
 
-	tl.add('end', 1.5)
+
+	const time = 1.5;
+	tl.add('end', 1)
 	tl.from('.t1', time, {opacity:0}, 'end')
 	tl.from('.legal', time, {opacity:0}, 'end')
 

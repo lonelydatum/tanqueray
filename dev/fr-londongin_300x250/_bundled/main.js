@@ -6,9 +6,11 @@ var start = function start(x, time) {
 	var tl = new TimelineMax();
 	tl.set('.frame1', { opacity: 1 });
 
-	tl.add('end', "+=.2");
+	tl.from('.product', time, { x: '-=' + x });
+
+	tl.add('end', "-=.7");
 	tl.from('.t1', time, { opacity: 0 }, 'end');
-	tl.from('.product', time, { x: '-=' + x }, 'end');
+
 	tl.from('.legal', time, { opacity: 0 }, 'end');
 };
 

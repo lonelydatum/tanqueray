@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Created: Aug 15, 12:40</title>
+<title>Created: Aug 15, 4:28</title>
 <style>#banner{opacity: 0;}</style>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <meta name="ad.size" content="width=300, height=250">
@@ -34,5 +34,5 @@
 </a>
 </body>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
-<script>!function e(r,n,t){function o(u,f){if(!n[u]){if(!r[u]){var a="function"==typeof require&&require;if(!f&&a)return a(u,!0);if(i)return i(u,!0);var c=new Error("Cannot find module '"+u+"'");throw c.code="MODULE_NOT_FOUND",c}var s=n[u]={exports:{}};r[u][0].call(s.exports,function(e){var n=r[u][1][e];return o(n?n:e)},s,s.exports,e,r,n,t)}return n[u].exports}for(var i="function"==typeof require&&require,u=0;u<t.length;u++)o(t[u]);return o}({1:[function(e,r,n){"use strict";var t=function(e,r){TweenLite.defaultEase=Power4.easeOut;var n=new TimelineMax;n.set(".frame1",{opacity:1}),n.add("end","+=.2"),n.from(".t1",r,{opacity:0},"end"),n.from(".product",r,{x:"-="+e},"end"),n.from(".legal",r,{opacity:0},"end")};r.exports=t},{}],2:[function(e,r,n){"use strict";function t(e){return e&&e.__esModule?e:{"default":e}}var o=e("../../_common/js/london_gin.js"),i=t(o);i["default"](180,1.5)},{"../../_common/js/london_gin.js":1}]},{},[2]);</script>
+<script>!function e(r,n,a){function t(f,i){if(!n[f]){if(!r[f]){var u="function"==typeof require&&require;if(!i&&u)return u(f,!0);if(o)return o(f,!0);var c=new Error("Cannot find module '"+f+"'");throw c.code="MODULE_NOT_FOUND",c}var l=n[f]={exports:{}};r[f][0].call(l.exports,function(e){var n=r[f][1][e];return t(n?n:e)},l,l.exports,e,r,n,a)}return n[f].exports}for(var o="function"==typeof require&&require,f=0;f<a.length;f++)t(a[f]);return t}({1:[function(e,r,n){"use strict";var a=function(e){TweenLite.defaultEase=Power4.easeOut;var r=new TimelineMax;r.set(".frame1",{opacity:1});var n=new TimelineMax;n.add("leaf"),n.from(".leaf_nw",1,{y:"-="+e,x:"-="+e},"leaf"),n.from(".leaf_ne",1,{y:"-="+e,x:"+="+e},"leaf"),n.from(".leaf_se",1,{y:"+="+e,x:"+="+e},"leaf");var a=1.5;r.add("end",.8),r.from(".t1",a,{opacity:0},"end"),r.from(".legal",a,{opacity:0},"end")};r.exports=a},{}],2:[function(e,r,n){"use strict";function a(e){return e&&e.__esModule?e:{"default":e}}var t=e("../../_common/js/malacca.js"),o=a(t);o["default"](120)},{"../../_common/js/malacca.js":1}]},{},[2]);</script>
 </html>
