@@ -15,7 +15,7 @@ const start = (num)=>{
 
 
 	const time = 1.5
-	tl.add('end', .8)
+	tl.add('end', .6)
 	tl.from('.t1', time, {opacity:0}, 'end')
 	tl.from('.legal', time, {opacity:0}, 'end')
 
