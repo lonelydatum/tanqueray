@@ -3,9 +3,7 @@ const start = ()=>{
 	const tl = new TimelineMax()
 	tl.set('.frame1', {opacity:1})
 	
-	tl.add('leaf')	
-	tl.from('.leaf.top', .9, {y:"-=100"}, 'leaf')
-	tl.from('.leaf.bottom', 1.2, {y:"+=100"}, 'leaf+=.2')
+	
 
 
 	const time = 1.5;

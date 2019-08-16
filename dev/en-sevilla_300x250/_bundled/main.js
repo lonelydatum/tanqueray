@@ -6,10 +6,6 @@ var start = function start() {
 	var tl = new TimelineMax();
 	tl.set('.frame1', { opacity: 1 });
 
-	tl.add('leaf');
-	tl.from('.leaf.top', .9, { y: "-=100" }, 'leaf');
-	tl.from('.leaf.bottom', 1.2, { y: "+=100" }, 'leaf+=.2');
-
 	var time = 1.5;
 	tl.add('end', 1);
 	tl.from('.t1', time, { opacity: 0 }, 'end');
@@ -26,6 +22,11 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'd
 var _commonJsSevillaJs = require('../../_common/js/sevilla.js');
 
 var _commonJsSevillaJs2 = _interopRequireDefault(_commonJsSevillaJs);
+
+var tl = new TimelineMax();
+tl.add('leaf');
+tl.from('.leaf.top', .9, { y: "-=100" }, 'leaf');
+tl.from('.leaf.bottom', 1.2, { y: "+=100" }, 'leaf+=.2');
 
 (0, _commonJsSevillaJs2['default'])();
 
