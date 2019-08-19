@@ -8,7 +8,13 @@
 	// opacity: 1;
 }
 
+.product{
+	@include pos-scale(-15, 0, .5);
+}
 
+.logo{
+	@include pos-scale(8, 0, .5);
+}
 
 #banner{
 	font-size: 20px;

@@ -16,7 +16,18 @@
 
 }
 
+.product{
+	@include pos-scale(-20, 0, .5);
+}
 
+.logo{
+	@include pos-scale(	30, 0, .5);
+}
+
+
+.t1, .t2{
+	@include pos-scale(	25, 0, .5);
+}
 
 #banner{
 	font-size: 20px;
