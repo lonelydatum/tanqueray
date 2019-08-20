@@ -9,7 +9,11 @@
 }
 
 .logo{
-	@include pos-scale(-12, -10, .56);
+	@include pos-scale(-2, -10, .56);
+}
+
+.t1{
+	@include pos-scale(11, 0, .5);
 }
 
 
