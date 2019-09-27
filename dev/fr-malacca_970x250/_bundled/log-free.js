@@ -2,15 +2,17 @@
 'use strict';
 
 var start = function start(num) {
+	var time_leaf = arguments.length <= 1 || arguments[1] === undefined ? 1 : arguments[1];
+
 	TweenLite.defaultEase = Power4.easeOut;
 	var tl = new TimelineMax();
 	tl.set('.frame1', { opacity: 1 });
 
 	var tl_leaf = new TimelineMax();
 	tl_leaf.add('leaf');
-	tl_leaf.from('.leaf_nw', 1, { y: '-=' + num, x: '-=' + num }, 'leaf');
-	tl_leaf.from('.leaf_ne', 1, { y: '-=' + num, x: '+=' + num }, 'leaf');
-	tl_leaf.from('.leaf_se', 1, { y: '+=' + num, x: '+=' + num }, 'leaf');
+	tl_leaf.from('.leaf_nw', time_leaf, { y: '-=' + num, x: '-=' + num }, 'leaf');
+	tl_leaf.from('.leaf_ne', time_leaf, { y: '-=' + num, x: '+=' + num }, 'leaf');
+	tl_leaf.from('.leaf_se', time_leaf, { y: '+=' + num, x: '+=' + num }, 'leaf');
 
 	var time = 1.5;
 	tl.add('end', .6);

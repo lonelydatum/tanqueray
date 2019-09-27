@@ -1,4 +1,4 @@
-const start = (num)=>{
+const start = (num, time_leaf=1)=>{
 	TweenLite.defaultEase = Power4.easeOut
 	const tl = new TimelineMax()
 	tl.set('.frame1', {opacity:1})
@@ -7,9 +7,9 @@ const start = (num)=>{
 	
 	const tl_leaf = new TimelineMax()
 	tl_leaf.add('leaf')	
-	tl_leaf.from('.leaf_nw', 1, {y:`-=${num}`, x:`-=${num}`}, 'leaf')
-	tl_leaf.from('.leaf_ne', 1, {y:`-=${num}`, x:`+=${num}`}, 'leaf')
-	tl_leaf.from('.leaf_se', 1, {y:`+=${num}`, x:`+=${num}`}, 'leaf')
+	tl_leaf.from('.leaf_nw', time_leaf, {y:`-=${num}`, x:`-=${num}`}, 'leaf')
+	tl_leaf.from('.leaf_ne', time_leaf, {y:`-=${num}`, x:`+=${num}`}, 'leaf')
+	tl_leaf.from('.leaf_se', time_leaf, {y:`+=${num}`, x:`+=${num}`}, 'leaf')
 
 	
 
